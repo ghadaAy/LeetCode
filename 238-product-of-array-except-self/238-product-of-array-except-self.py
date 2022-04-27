@@ -10,10 +10,8 @@ class Solution:
         
         for x in nums:
             if x!=0 or (x==0 and nb>0):
-                print(x,nb)
                 prod = prod * x
             else: 
-                print(x,nb)
                 flag = True
                 nb += 1
         
