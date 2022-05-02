@@ -2,12 +2,13 @@ class Solution:
     def sortArrayByParity(self, nums: List[int]) -> List[int]:
         
         result = list()
-        for i in range(len(nums)):
+        n = len(nums)
+        
+        for i in range(n):
             if nums[i]%2 == 0:
                 result.insert(0,nums[i])
             else:
-                result.insert(len(nums)-1,nums[i])
-                
+                result.insert(n-1,nums[i])
                 
         return result
             
