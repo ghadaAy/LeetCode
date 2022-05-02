@@ -7,7 +7,7 @@ class Solution:
             if nums[i]%2 == 0:
                 result.insert(0,nums[i])
             else:
-                result.append(nums[i])
+                result.insert(len(nums)-1,nums[i])
                 
         return result
             
