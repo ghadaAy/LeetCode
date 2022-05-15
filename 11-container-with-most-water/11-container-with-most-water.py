@@ -3,7 +3,7 @@ class Solution:
         max_h = 0
         i = 0
         j = len(height)-1
-        while(i<j):
+        for _ in range(i, j):
             leng = min(height[i],height[j])
             area = leng*(abs(j-i))
             max_h = max(area, max_h)
@@ -12,4 +12,7 @@ class Solution:
                   j -= 1
             else:
                 i += 1
+                
+            if j <= i:
+                break
         return max_h
