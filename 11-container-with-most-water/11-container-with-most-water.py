@@ -6,7 +6,6 @@ class Solution:
         j = l-1
         while(i<j):
             leng = min(height[i],height[j])
-            
             area = leng*(abs(j-i))
             max_h = max(area, max_h)
             
